@@ -33,12 +33,10 @@ public class EntityParrotPet extends EntityTameablePet implements IEntityParrotP
     }
 
     @Override
-    protected PathNavigation createNavigation(Level var1) {
-        FlyingPathNavigation navigationflying = new FlyingPathNavigation(this, var1);
-        navigationflying.setCanOpenDoors(false);
-        navigationflying.setCanFloat(true);
-        navigationflying.setCanPassDoors(true);
-        return navigationflying;
+    protected PathNavigation createNavigation(Level level) {
+        FlyingPathNavigation navigation = new FlyingPathNavigation(this, level);
+        VersionTranslator.setupFlyingNavigation(this, level, navigation);
+        return navigation;
     }
 
     @Override

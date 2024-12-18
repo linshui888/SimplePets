@@ -43,11 +43,11 @@ import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
 import org.bukkit.block.data.BlockData;
-import org.bukkit.craftbukkit.v1_21_R2.CraftWorld;
-import org.bukkit.craftbukkit.v1_21_R2.block.data.CraftBlockData;
-import org.bukkit.craftbukkit.v1_21_R2.entity.CraftEntity;
-import org.bukkit.craftbukkit.v1_21_R2.inventory.CraftItemStack;
-import org.bukkit.craftbukkit.v1_21_R2.util.CraftNamespacedKey;
+import org.bukkit.craftbukkit.v1_21_R3.CraftWorld;
+import org.bukkit.craftbukkit.v1_21_R3.block.data.CraftBlockData;
+import org.bukkit.craftbukkit.v1_21_R3.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_21_R3.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_21_R3.util.CraftNamespacedKey;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import simplepets.brainsynder.api.entity.misc.IFlyableEntity;
 import simplepets.brainsynder.nms.entity.EntityPet;
@@ -64,10 +64,10 @@ public class VersionTranslator {
     private static Field jumpingField = null;
 
     static {
-        accessor = FieldAccessor.getField(LivingEntity.class, VersionFields.v1_21_3.getAttributesField(), AttributeMap.class);
+        accessor = FieldAccessor.getField(LivingEntity.class, VersionFields.v1_21_4.getAttributesField(), AttributeMap.class);
 
         try {
-            Field jumpingField = LivingEntity.class.getDeclaredField(VersionFields.v1_21_3.getEntityJumpField());
+            Field jumpingField = LivingEntity.class.getDeclaredField(VersionFields.v1_21_4.getEntityJumpField());
             jumpingField.setAccessible(true);
             VersionTranslator.jumpingField = jumpingField;
         } catch (Exception ex) {
@@ -92,7 +92,7 @@ public class VersionTranslator {
     }
 
     public static org.bukkit.entity.Entity getBukkitEntity(Entity entity) {
-        org.bukkit.craftbukkit.v1_21_R2.entity.CraftEntity craftEntity = entity.getBukkitEntity();
+        org.bukkit.craftbukkit.v1_21_R3.entity.CraftEntity craftEntity = entity.getBukkitEntity();
         return craftEntity;
     }
 
@@ -173,7 +173,7 @@ public class VersionTranslator {
                                       boolean glow) throws IllegalAccessException {
         Int2ObjectMap<SynchedEntityData.DataItem<Byte>> newMap =
                 (Int2ObjectMap<SynchedEntityData.DataItem<Byte>>) FieldUtils.readDeclaredField(toCloneDataWatcher,
-                        VersionFields.v1_21_3.getEntityDataMapField(), true);
+                        VersionFields.v1_21_4.getEntityDataMapField(), true);
 
         SynchedEntityData.DataItem<Byte> item = newMap.get(0);
         byte initialBitMask = item.getValue();
@@ -183,7 +183,7 @@ public class VersionTranslator {
         } else {
             item.setValue((byte) (initialBitMask & ~(1 << bitMaskIndex)));
         }
-        FieldUtils.writeDeclaredField(newDataWatcher, VersionFields.v1_21_3.getEntityDataMapField(), newMap, true);
+        FieldUtils.writeDeclaredField(newDataWatcher, VersionFields.v1_21_4.getEntityDataMapField(), newMap, true);
     }
 
     public static org.bukkit.inventory.ItemStack toItemStack(StorageTagCompound compound) {
@@ -313,6 +313,5 @@ public class VersionTranslator {
     public static void setupFlyingNavigation (EntityPet entityPet, Level level, FlyingPathNavigation navigation) {
         navigation.setCanOpenDoors(false);
         navigation.setCanFloat(false);
-        navigation.setCanPassDoors(true);
     }
 }

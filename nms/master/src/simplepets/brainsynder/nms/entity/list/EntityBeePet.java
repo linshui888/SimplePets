@@ -33,9 +33,7 @@ public class EntityBeePet extends EntityAgeablePet implements IEntityBeePet {
     @Override
     protected PathNavigation createNavigation(Level level) {
         FlyingPathNavigation navigation = new FlyingPathNavigation(this, level);
-        navigation.setCanOpenDoors(false);
-        navigation.setCanFloat(false);
-        navigation.setCanPassDoors(true);
+        VersionTranslator.setupFlyingNavigation(this, level, navigation);
         return navigation;
     }
 
