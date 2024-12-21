@@ -1,5 +1,6 @@
 package simplepets.brainsynder.nms.entity;
 
+import lib.brainsynder.json.JsonObject;
 import lib.brainsynder.nbt.StorageTagCompound;
 import lib.brainsynder.sounds.SoundMaker;
 import lib.brainsynder.utils.Colorize;
@@ -122,6 +123,50 @@ public abstract class EntityPet extends EntityBase implements IEntityPet {
         verticalWorldConfines = ConfigOption.INSTANCE.MISC_TOGGLES_WORLD_CONFINES_PET_LIMITS.getValue();
         maxHeight = getEntity().getWorld().getMaxHeight();
         minHeight = getEntity().getWorld().getMinHeight();
+    }
+
+    @Override
+    public void fetchPetDebugInformation(JsonObject debugInfo) {
+        ServerPlayer player = VersionTranslator.getEntityHandle(getPetUser().getPlayer());
+
+        debugInfo.set("display-name", new JsonObject()
+                .add("name", petName)
+                .add("display-name-visibility (config)", displayNameVisibility)
+                .add("hide-name-while-shifting (config)", hideNameShifting)
+                .add("actually-visible", isCustomNameVisible())
+        );
+        debugInfo.set("data", new JsonObject()
+                .add("jump-height", jumpHeight)
+                .add("frozen", frozen)
+                .add("on-fire", onFire)
+                .add("silent", silent)
+                .add("visible", visible)
+                .add("auto-remove", new JsonObject()
+                        .add("auto-remove-enabled", autoRemoveToggle)
+                        .add("stand-still-ticks", standStillTicks)
+                        .add("auto-remove-tick", autoRemoveTick)
+                )
+                .add("hover-remove", new JsonObject()
+                        .add("hover-ticks", hoverTickCount)
+                        .add("hover-ticks-target", hoverRemoveTick)
+                )
+        );
+
+        int maxRange = ConfigOption.INSTANCE.PATHFINDING_MAX_DISTANCE.getValue();
+        debugInfo.set("follow-player", new JsonObject()
+                .add("distance", distanceToSqr(player))
+                .add("max-follow-distance (config)", maxRange)
+                .add("should-follow", (distanceToSqr(player) < (double) (maxRange * maxRange)) )
+        );
+
+        int teleportDistance = ConfigOption.INSTANCE.PATHFINDING_TELEPORT_DISTANCE.getValue();
+        debugInfo.set("teleport-pet", new JsonObject()
+                .add("distance", distanceTo(player))
+                .add("teleport-distance (config)", teleportDistance)
+                .add("should-teleport", (distanceToSqr(player) >= teleportDistance) )
+                .add("should-force-teleport", (distanceTo(player) >= 80) )
+        );
+        // debugInfo.set("", "");
     }
 
     public void setDisplayName(boolean displayName) {

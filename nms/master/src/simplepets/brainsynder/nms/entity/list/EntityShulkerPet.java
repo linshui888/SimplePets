@@ -1,5 +1,6 @@
 package simplepets.brainsynder.nms.entity.list;
 
+import lib.brainsynder.json.JsonObject;
 import lib.brainsynder.nbt.StorageTagCompound;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -59,6 +60,9 @@ public class EntityShulkerPet extends Shulker implements IEntityShulkerPet {
         this.user = user;
         this.additional = new HashMap<>();
     }
+
+    @Override
+    public void fetchPetDebugInformation(JsonObject debugInfo) {}
 
     @Override
     public EntityType<?> getType() {

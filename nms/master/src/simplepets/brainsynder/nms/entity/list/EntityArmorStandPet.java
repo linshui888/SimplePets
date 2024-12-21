@@ -2,6 +2,7 @@ package simplepets.brainsynder.nms.entity.list;
 
 import com.mojang.authlib.GameProfile;
 import lib.brainsynder.item.ItemBuilder;
+import lib.brainsynder.json.JsonObject;
 import lib.brainsynder.nbt.StorageBase;
 import lib.brainsynder.nbt.StorageTagCompound;
 import lib.brainsynder.nbt.StorageTagString;
@@ -74,6 +75,9 @@ public class EntityArmorStandPet extends ArmorStand implements IEntityArmorStand
         this.additional = new HashMap<>();
         // walking = new AnimationController(this, AnimationManager.WALKING_ANIMATION); TODO: I disabled the animations
     }
+
+    @Override
+    public void fetchPetDebugInformation(JsonObject debugInfo) {}
 
     @Override
     public EntityType<?> getType() {
