@@ -166,8 +166,17 @@ public abstract class EntityPet extends EntityBase implements IEntityPet {
                 .add("should-teleport", (distanceToSqr(player) >= teleportDistance) )
                 .add("should-force-teleport", (distanceTo(player) >= 80) )
         );
-        // debugInfo.set("", "");
+
+        JsonObject petData = new JsonObject();
+        if (this instanceof IEntityControllerPet controllerPet) {
+            controllerPet.getVisibleEntity().fetchPetDebugInformation(petData);
+        }else{
+            fetchPetData(petData);
+        }
+        debugInfo.set("pet-"+getPetType().getName()+"-data", petData);
     }
+
+    public void fetchPetData(JsonObject data) {}
 
     public void setDisplayName(boolean displayName) {
         this.displayNameVisibility = displayName;

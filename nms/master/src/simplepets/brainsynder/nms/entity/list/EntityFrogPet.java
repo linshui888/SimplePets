@@ -2,6 +2,7 @@ package simplepets.brainsynder.nms.entity.list;
 
 import lib.brainsynder.ServerVersion;
 import lib.brainsynder.SupportedVersion;
+import lib.brainsynder.json.JsonObject;
 import lib.brainsynder.math.MathUtils;
 import lib.brainsynder.nbt.StorageTagCompound;
 import net.minecraft.core.Holder;
@@ -45,6 +46,14 @@ public class EntityFrogPet extends EntityAgeablePet implements IEntityFrogPet {
     public EntityFrogPet(PetType type, PetUser user) {
         super(EntityType.FROG, type, user);
         //this.moveControl = new SmoothSwimmingMoveControl(this, 85, 10, 0.02F, 0.1F, true);
+    }
+
+    @Override
+    public void fetchPetData(JsonObject data) {
+        super.fetchPetData(data);
+        data.add("variant", getVariant().name());
+        data.add("croaking", isCroaking());
+        data.add("tongue", isUsingTongue());
     }
 
     @Override

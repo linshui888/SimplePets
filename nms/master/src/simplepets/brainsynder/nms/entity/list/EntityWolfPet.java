@@ -1,5 +1,6 @@
 package simplepets.brainsynder.nms.entity.list;
 
+import lib.brainsynder.json.JsonObject;
 import lib.brainsynder.nbt.StorageTagCompound;
 import lib.brainsynder.utils.DyeColorWrapper;
 import net.minecraft.core.Holder;
@@ -37,6 +38,16 @@ public class EntityWolfPet extends EntityTameablePet implements IEntityWolfPet {
 
     public EntityWolfPet(PetType type, PetUser user) {
         super(EntityType.WOLF, type, user);
+    }
+
+    @Override
+    public void fetchPetData(JsonObject data) {
+        super.fetchPetData(data);
+        data.add("anger", isAngry());
+        data.add("shaking", isShaking());
+        data.add("head-tilted", isHeadTilted());
+        data.add("collar-color", getColor().name());
+        data.add("type", getWolfType().name());
     }
 
     @Override

@@ -1,5 +1,6 @@
 package simplepets.brainsynder.nms.entity.list;
 
+import lib.brainsynder.json.JsonObject;
 import lib.brainsynder.nbt.StorageTagCompound;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -30,6 +31,13 @@ public class EntityParrotPet extends EntityTameablePet implements IEntityParrotP
     public EntityParrotPet(PetType type, PetUser user) {
         super(EntityType.PARROT, type, user);
         this.moveControl = new FlyingMoveControl(this, 10, false);
+    }
+
+    @Override
+    public void fetchPetData(JsonObject data) {
+        super.fetchPetData(data);
+        data.add("variant", getVariant().name());
+        data.add("rainbow", isRainbow());
     }
 
     @Override

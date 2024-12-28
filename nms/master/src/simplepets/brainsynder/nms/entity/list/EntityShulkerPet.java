@@ -62,7 +62,11 @@ public class EntityShulkerPet extends Shulker implements IEntityShulkerPet {
     }
 
     @Override
-    public void fetchPetDebugInformation(JsonObject debugInfo) {}
+    public void fetchPetDebugInformation(JsonObject debugInfo) {
+        if (!isRainbow()) debugInfo.add("color", getColorWrapper().name());
+        debugInfo.add("rainbow", isRainbow());
+        debugInfo.add("closed", isShulkerClosed());
+    }
 
     @Override
     public EntityType<?> getType() {
