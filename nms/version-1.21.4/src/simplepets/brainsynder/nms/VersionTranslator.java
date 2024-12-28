@@ -127,7 +127,6 @@ public class VersionTranslator {
         stand.setItemSlot(enumitemslot, itemstack, silent);
     }
 
-    // TODO: This is throwing a 'NoSuchElementException: No value present' at CraftEntityType.minecraftToBukkit
     public static boolean addEntity(Level level, Entity entity, CreatureSpawnEvent.SpawnReason reason) {
         return level.addFreshEntity(entity, CreatureSpawnEvent.SpawnReason.CUSTOM);
     }
