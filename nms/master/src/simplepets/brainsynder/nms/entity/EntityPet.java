@@ -645,6 +645,10 @@ public abstract class EntityPet extends EntityBase implements IEntityPet {
         return true; // Prevents pets from teleporting from a portal
     }
 
+    @Override
+    protected void handlePortal() {
+        // Prevents pets from teleporting from a portal
+    }
 
     // Added in 1.20
     public boolean isOnGround() {
