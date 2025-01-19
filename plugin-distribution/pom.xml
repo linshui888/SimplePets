@@ -267,6 +267,10 @@
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -278,6 +282,10 @@
                         <exclusion>
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -291,6 +299,10 @@
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -302,6 +314,10 @@
                         <exclusion>
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -322,6 +338,10 @@
                         <exclusion>
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -348,6 +368,10 @@
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
             </dependencies>
@@ -371,6 +395,10 @@
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -382,6 +410,10 @@
                         <exclusion>
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -395,6 +427,10 @@
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -406,6 +442,10 @@
                         <exclusion>
                             <groupId>anvil.brainsynder</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>simplepets.brainsynder</groupId>
+                            <artifactId>NMS_Master</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
