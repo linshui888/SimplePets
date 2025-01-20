@@ -123,7 +123,8 @@ public enum PetType {
     CREAKING(IEntityCreakingPet.class, "77b5be72769ccff1a6cb77c5848e01d7e5704a3d349c0737ff93cb54d02380ac"),
 
     @PetCustomization(ambient = SoundMaker.ENTITY_DOLPHIN_AMBIENT, weight = PetWeight.SLIGHTLY_HEAVY)
-    DOLPHIN(IEntityDolphinPet.class, "8e9688b950d880b55b7aa2cfcd76e5a0fa94aac6d16f78e833f7443ea29fed3"),
+    DOLPHIN(IEntityDolphinPet.class, "8e9688b950d880b55b7aa2cfcd76e5a0fa94aac6d16f78e833f7443ea29fed3",
+            AgeData.class),
 
     @PetCustomization(ambient = SoundMaker.ENTITY_DONKEY_AMBIENT, weight = PetWeight.HEAVY)
     DONKEY(IEntityDonkeyPet.class, "399bb50d1a214c394917e25bb3f2e20698bf98ca703e4cc08b42462df309d6e6",
@@ -167,7 +168,7 @@ public enum PetType {
 
     @PetCustomization(ambient = SoundMaker.ENTITY_GLOW_SQUID_AMBIENT, weight = PetWeight.SLIGHTLY_HEAVY)
     GLOW_SQUID(IEntityGlowSquidPet.class, "3e94a1bb1cb00aaa153a74daf4b0eea20b8974522fe9901eb55aef478ebeff0d",
-        GlowingData.class),
+            AgeData.class, GlowingData.class),
 
     @PetCustomization(ambient = SoundMaker.ENTITY_GOAT_AMBIENT, weight = PetWeight.SLIGHTLY_HEAVY)
     GOAT(IEntityGoatPet.class, "957607099d06b7a8b1327093cd0a488be7c9f50b6121b22151271b59170f3c21",
@@ -298,7 +299,8 @@ public enum PetType {
     SPIDER(IEntitySpiderPet.class, "c87a96a8c23b83b32a73df051f6b84c2ef24d25ba4190dbe74f11138629b5aef"),
 
     @PetCustomization(ambient = SoundMaker.ENTITY_SQUID_AMBIENT, weight = PetWeight.SLIGHTLY_HEAVY)
-    SQUID(IEntitySquidPet.class, "01433be242366af126da434b8735df1eb5b3cb2cede39145974e9c483607bac"),
+    SQUID(IEntitySquidPet.class, "01433be242366af126da434b8735df1eb5b3cb2cede39145974e9c483607bac",
+            AgeData.class),
 
     @PetCustomization(ambient = SoundMaker.ENTITY_STRAY_AMBIENT, weight = PetWeight.SLIGHTLY_HEAVY)
     STRAY(IEntityStrayPet.class, "2c5097916bc0565d30601c0eebfeb287277a34e867b4ea43c63819d53e89ede7"),
