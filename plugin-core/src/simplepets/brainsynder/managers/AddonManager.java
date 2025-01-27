@@ -412,10 +412,6 @@ public class AddonManager {
         WebConnector.getInputStreamString("https://bsdevelopment.org/api/addons/list/SimplePets", plugin, result -> {
             List<AddonCloudData> addons = Lists.newArrayList();
 
-            // Send a debug message with the result of the request, this is hidden so it doesn't spam the console
-            // but can be viewed in the debug report
-            SimplePets.getDebugLogger().debug(DebugLevel.HIDDEN, "Fetched Addons: `" + result+"`");
-
             JsonArray array = Json.parse(result).asArray();
             array.forEach(jsonValue -> {
                 JsonObject json = jsonValue.asObject();
