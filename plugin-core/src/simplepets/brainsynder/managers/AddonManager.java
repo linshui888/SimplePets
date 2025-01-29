@@ -421,10 +421,10 @@ public class AddonManager {
                     throw new AddonParsingException("Json object is not empty: '" + jsonValue + "'");
 
                 // Check for missing fields, output an error if any are missing containing the json object
-                for (String key : Arrays.asList("id", "name", "description", "author", "version", "download_url", "last_updated", "download_count")) {
-                    if (!json.names().contains(key))
-                        throw new AddonParsingException("Missing '" + key + "' field in addon data: '" + jsonValue + "'");
-                }
+//                for (String key : Arrays.asList("id", "name", "description", "author", "version", "download_url", "last_updated", "download_count")) {
+//                    if (!json.names().contains(key))
+//                        throw new AddonParsingException("Missing '" + key + "' field in addon data: '" + jsonValue + "'");
+//                }
 
                 AddonCloudData data = new AddonCloudData(
                     json.get("id").asString(),
