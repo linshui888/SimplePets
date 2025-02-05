@@ -64,6 +64,7 @@ public class EntityControllerPet extends EntityZombiePet implements IEntityContr
             }
             default -> throw new IllegalStateException("This pet does not use controller pets!");
         }
+        ENTITIES.forEach(entity -> entity.setInvulnerable(true));
         collides = false;
     }
 
