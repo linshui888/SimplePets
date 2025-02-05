@@ -58,11 +58,11 @@
                         <configuration>
                             <relocations>
                                 <relocation>
-                                    <pattern>org.apache.commons</pattern>
+                                    <pattern>org.apache.commons.io</pattern>
                                     <shadedPattern>${project.groupId}.internal.apache</shadedPattern>
                                 </relocation>
                                 <relocation>
-                                    <pattern>anvil.brainsynder</pattern>
+                                    <pattern>net.wesjd</pattern>
                                     <shadedPattern>${project.groupId}.internal.anvil</shadedPattern>
                                 </relocation>
                                 <relocation>
@@ -87,7 +87,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>anvil.brainsynder</groupId>
+            <groupId>net.wesjd</groupId>
             <artifactId>anvilgui</artifactId>
             <version>${anvilgui.version}</version>
         </dependency>
@@ -106,7 +106,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -118,7 +118,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -130,7 +130,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -142,7 +142,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -154,7 +154,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -173,7 +173,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -185,7 +185,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -197,7 +197,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -209,7 +209,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -221,7 +221,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -233,7 +233,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -245,7 +245,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                     </exclusions>
@@ -264,7 +264,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -280,7 +280,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -296,7 +296,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -312,7 +312,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -336,7 +336,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -365,7 +365,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -392,7 +392,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -408,7 +408,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -424,7 +424,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
@@ -440,7 +440,7 @@
                     <scope>compile</scope>
                     <exclusions>
                         <exclusion>
-                            <groupId>anvil.brainsynder</groupId>
+                            <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
