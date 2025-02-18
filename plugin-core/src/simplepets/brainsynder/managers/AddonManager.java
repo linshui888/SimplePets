@@ -426,19 +426,24 @@ public class AddonManager {
 //                        throw new AddonParsingException("Missing '" + key + "' field in addon data: '" + jsonValue + "'");
 //                }
 
-                AddonCloudData data = new AddonCloudData(
-                    json.get("id").asString(),
-                    json.get("name").asString(),
-                    json.get("description").asString(),
-                    json.get("author").asString(),
-                    json.get("version").asString(),
-                    json.get("download_url").asString(),
-                    json.get("last_updated").asString(),
-                    json.get("download_count").asInt()
-                );
+                try {
+                    AddonCloudData data = new AddonCloudData(
+                            json.get("id").asString(),
+                            json.get("name").asString(),
+                            json.get("description").asString(),
+                            json.get("author").asString(),
+                            json.get("version").asString(),
+                            json.get("download_url").asString(),
+                            json.get("last_updated").asString(),
+                            json.get("download_count").asInt()
+                    );
 
-                addons.add(data);
-                registeredAddons.add(data.getName());
+                    addons.add(data);
+                    registeredAddons.add(data.getName());
+                } catch (Exception e) {
+                    // Failed to fetch addon data
+                    SimplePets.getDebugLogger().debug(DebugLevel.HIDDEN, "Failed to fetch data for addon: "+json.getString("name", "UNKNOWN NAME")+" (v"+json.getString("version", "UNKNOWN VERSION")+")");
+                }
             });
             consumer.accept(addons);
         });
