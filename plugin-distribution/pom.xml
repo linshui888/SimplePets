@@ -109,6 +109,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -120,6 +124,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -133,6 +141,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -145,6 +157,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -156,6 +172,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -176,6 +196,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -187,6 +211,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -200,6 +228,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -211,6 +243,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -224,6 +260,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -236,6 +276,10 @@
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
                     </exclusions>
                 </dependency>
                 <dependency>
@@ -247,6 +291,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -268,6 +316,10 @@
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
+                        <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
                             <artifactId>NMS_Master</artifactId>
                         </exclusion>
@@ -282,6 +334,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                         <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
@@ -300,6 +356,10 @@
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
+                        <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
                             <artifactId>NMS_Master</artifactId>
                         </exclusion>
@@ -314,6 +374,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                         <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
@@ -338,6 +402,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                         <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
@@ -369,6 +437,10 @@
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
+                        <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
                             <artifactId>NMS_Master</artifactId>
                         </exclusion>
@@ -396,6 +468,10 @@
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
+                        <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
                             <artifactId>NMS_Master</artifactId>
                         </exclusion>
@@ -410,6 +486,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                         <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
@@ -428,6 +508,10 @@
                             <artifactId>anvilgui</artifactId>
                         </exclusion>
                         <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
+                        </exclusion>
+                        <exclusion>
                             <groupId>simplepets.brainsynder</groupId>
                             <artifactId>NMS_Master</artifactId>
                         </exclusion>
@@ -442,6 +526,10 @@
                         <exclusion>
                             <groupId>net.wesjd</groupId>
                             <artifactId>anvilgui</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.bstats</groupId>
+                            <artifactId>bstats-bukkit</artifactId>
                         </exclusion>
                         <exclusion>
                             <groupId>simplepets.brainsynder</groupId>

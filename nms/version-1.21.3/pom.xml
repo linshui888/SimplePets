@@ -98,6 +98,10 @@
                     <artifactId>anvilgui</artifactId>
                 </exclusion>
                 <exclusion>
+                    <groupId>org.bstats</groupId>
+                    <artifactId>bstats-bukkit</artifactId>
+                </exclusion>
+                <exclusion>
                     <groupId>com.jeff_media</groupId>
                     <artifactId>SpigotUpdateChecker</artifactId>
                 </exclusion>
